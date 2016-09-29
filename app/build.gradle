@@ -27,6 +27,26 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.0.0-alpha2'
     compile 'com.android.support:design:24.0.0-alpha2'
     compile 'com.flurry.android:analytics:6.3.1'
-    compile files('libs/android-support-v4.jar')
-    //compile project(":ActionBarSherlock")
+
+    compile 'com.j256.ormlite:ormlite-core:5.0'
+
+    // Error:Packaging for dependency com.navercorp.pulltorefresh:library:3.2.2 is 'apklib' and is not supported. Only 'aar' libraries are supported.
+    // compile 'com.navercorp.pulltorefresh:library:3.2.2'
+
+    // https://mvnrepository.com/artifact/com.google.android.maps/maps
+    compile group: 'com.google.android.maps', name: 'maps', version: '15_r2'
+
+    // https://mvnrepository.com/artifact/com.actionbarsherlock/actionbarsherlock
+    //Error:Packaging for dependency com.actionbarsherlock:actionbarsherlock:4.4.0 is 'apklib' and is not supported. Only 'aar' libraries are supported.
+    //compile group: 'com.actionbarsherlock', name: 'actionbarsherlock', version: '4.4.0'
+
+    // https://mvnrepository.com/artifact/com.actionbarsherlock/library
+    compile group: 'com.actionbarsherlock', name: 'library', version: '4.2.0'
+
+
+
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:24.+'
+
+    //compile 'com.bugsense.trace:bugsense:3.+'
 }

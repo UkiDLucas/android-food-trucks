@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.uki.foodtrucks.R;
+import com.cyberwalkabout.foodtrucks.R;
 import com.cyberwalkabout.foodtrucks.twitter.TwitterStatus;
 
 public class MentionsAdapter extends BaseAdapter {
