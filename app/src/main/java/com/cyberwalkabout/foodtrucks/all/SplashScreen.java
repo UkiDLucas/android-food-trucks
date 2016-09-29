@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.cyberwalkabout.foodtrucks.FoodTrucksService;
+import com.cyberwalkabout.foodtrucks.R;
 import com.cyberwalkabout.foodtrucks.cities.City;
 import com.cyberwalkabout.foodtrucks.cities.SpreadSheetCitiesProvider;
 import com.cyberwalkabout.foodtrucks.db.DatabaseHelper;

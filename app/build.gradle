@@ -54,4 +54,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.googlecode.android-query/android-query
     compile group: 'com.googlecode.android-query', name: 'android-query', version: '0.25.9'
 
+    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-android
+    compile group: 'com.j256.ormlite', name: 'ormlite-android', version: '5.0'
+
+
 }
