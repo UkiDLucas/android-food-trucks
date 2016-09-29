@@ -50,4 +50,8 @@ dependencies {
     compile 'com.android.support:support-v4:24.+'
 
     //compile 'com.bugsense.trace:bugsense:3.+'
+
+    // https://mvnrepository.com/artifact/com.googlecode.android-query/android-query
+    compile group: 'com.googlecode.android-query', name: 'android-query', version: '0.25.9'
+
 }

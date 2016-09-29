@@ -14,7 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.androidquery.AQuery;
-import com.uki.foodtrucks.R;
+
+import com.cyberwalkabout.foodtrucks.R;
 import com.cyberwalkabout.foodtrucks.twitter.TwitterStatus;
 
 public class StatusesAdapter extends BaseAdapter {

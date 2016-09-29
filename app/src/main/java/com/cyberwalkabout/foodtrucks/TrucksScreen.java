@@ -1,6 +1,5 @@
 package com.cyberwalkabout.foodtrucks;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
@@ -16,8 +15,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.*;
+import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.actionbarsherlock.app.SherlockMapActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
@@ -31,18 +34,22 @@ import com.cyberwalkabout.foodtrucks.overlays.TwitterMentionsOverlay;
 import com.cyberwalkabout.foodtrucks.overlays.TwitterProfilesOverlay;
 import com.cyberwalkabout.foodtrucks.twitter.TwitterClient;
 import com.cyberwalkabout.foodtrucks.twitter.TwitterStatus;
-import com.uki.sns.SNServices;
-import com.uki.sns.ShareSettings;
-import com.uki.common.util.ConvertUtils;
-import com.uki.common.util.Sys;
 import com.flurry.android.FlurryAgent;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.uki.common.util.ConvertUtils;
+import com.uki.common.util.Sys;
+import com.uki.sns.SNServices;
+import com.uki.sns.ShareSettings;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class TrucksScreen extends SherlockMapActivity implements OnClickListener {
@@ -183,7 +190,7 @@ public class TrucksScreen extends SherlockMapActivity implements OnClickListener
 
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-                TwitterStatus profile = currentViewMode == ViewMode.FAVORITES ? filteredProfiles.get(position-1) : profiles.get(position-1);
+                TwitterStatus profile = currentViewMode == ViewMode.FAVORITES ? filteredProfiles.get(position - 1) : profiles.get(position - 1);
                 String screenName = "@" + profile.getFromUser();
                 FoodTruck t = DatabaseHelper.get(TrucksScreen.this).getFoodTruckByTwitterName(screenName);
                 Intent descriptionIntent = new Intent(TrucksScreen.this, DescriptionScreen.class);
