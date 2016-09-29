@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/lpost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/description_bkg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <EditText
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:lines="4"
+                android:textSize="14dp"/>
+
+        <TextView
+                android:id="@+id/appString"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/tweet_text"
+                android:textSize="12sp"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="7dip"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+            <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/send_button_selector"
+                    android:paddingLeft="40dip"
+                    android:paddingRight="40dip"
+                    android:text="Send"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+            <ToggleButton
+                    android:id="@+id/btn_geo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/description_bkg"
+            android:weightSum="10">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_weight="2"
+                android:gravity="left">
+
+            <ImageView
+                    android:id="@+id/twitter_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/description_img_border"
+                    android:padding="2dip"
+                    android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:paddingLeft="4dip"
+                android:textColor="#3b3e40"
+                android:textSize="12dp"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <CheckBox
+                    android:id="@+id/favorite"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:button="@drawable/fav_selector_gray"
+                    android:gravity="center_horizontal"
+                    android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/mentions_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/description_mentions_bkg"
+                android:paddingBottom="8dp"
+                android:paddingLeft="64dp"
+                android:paddingTop="8dp"
+                android:text="mentions on twitter"
+                android:textColor="#0F98D7"
+                android:textSize="17sp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-1dp"
+                android:paddingLeft="12dp"
+                android:src="@drawable/mentions_twitter_flag"/>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/mentions"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#e7e7e7"
+            android:dividerHeight="2px"/>
+
+</LinearLayout>

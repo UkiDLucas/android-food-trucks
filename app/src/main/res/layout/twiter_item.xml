@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="5dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:textColor="#555555"
+                android:textSize="16dp"
+                android:lineSpacingExtra="5dp"
+                android:typeface="sans"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14dp"
+                    android:typeface="sans"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/time"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tweet_time"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:typeface="sans"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <city
+            name="Atlanta, GA"
+            lat="33.755"
+            lon="-84.39"
+            worksheet_number="8"/>
+    <city
+            name="Bay Area, CA"
+            lat="37.402"
+            lon="-122.077"
+            worksheet_number="2"/>
+    <city
+            name="Chicago, IL"
+            lat="41.871"
+            lon="-87.626"
+            worksheet_number="1"/>
+    <city
+            name="Dallas, TX"
+            lat="32.798"
+            lon="-96.772"
+            worksheet_number="7"/>
+    <city
+            name="Houston, TX"
+            lat="29.754"
+            lon="-95.365"
+            worksheet_number="12"/>
+    <city
+            name="Las Vegas, NV"
+            lat="36.117"
+            lon="-115.166"
+            worksheet_number="9"/>
+    <city
+            name="Los Angeles, CA"
+            lat="34.046"
+            lon="-118.241"
+            worksheet_number="10"/>
+    <city
+            name="Miami, FL"
+            lat="25.786"
+            lon="-80.225"
+            worksheet_number="6"/>
+    <city
+            name="New York City, NY"
+            lat="40.719"
+            lon="-73.999"
+            worksheet_number="3"/>
+    <city
+            name="Orange County, CA"
+            lat="33.715"
+            lon="-117.816"
+            worksheet_number="11"/>
+    <city
+            name="Phoenix, AZ"
+            lat="33.445"
+            lon="-112.074"
+            worksheet_number="13"/>
+    <city
+            name="Portland, OR"
+            lat="45.520"
+            lon="-122.670"
+            worksheet_number="12"/>
+    <city
+            name="Seattle, WA"
+            lat="47.606"
+            lon="-122.323"
+            worksheet_number="5"/>
+    <city
+            name="Washington, DC"
+            lat="38.893"
+            lon="-77.027"
+            worksheet_number="4"/>
+
+</cities>

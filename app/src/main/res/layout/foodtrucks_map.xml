@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/action_bar_bkg"
+            android:weightSum="5">
+
+        <ImageButton
+                android:id="@+id/btn_select_region"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:layout_weight="1"
+                android:src="@drawable/toolber_filter_button"/>
+
+        <ImageButton
+                android:id="@+id/btn_nearby_cities"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:background="@drawable/toolbar_button_selector"
+                android:layout_weight="1"
+                android:src="@drawable/toolber_filter_button"/>
+
+        <ImageButton
+                android:id="@+id/btn_favorites"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/toolbar_button_selector"
+                android:src="@drawable/toolbar_favorites_button"/>
+
+        <ImageButton
+                android:id="@+id/btn_share_this_app"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/toolbar_button_selector"
+                android:src="@drawable/toolbar_share_button"/>
+
+        <ImageButton
+                android:id="@+id/btn_about_us"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/toolbar_button_selector"
+                android:src="@drawable/toolbar_info_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/navigation_bar"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+
+            <com.google.android.maps.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:apiKey="@string/map_api_key"
+                    android:clickable="true"/>
+
+            <TextView
+                    android:id="@+id/no_geo_tweets_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/no_geo_tweets_message"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/no_geotweets_popup_bkg"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60">
+
+            <include layout="@layout/twitter_list"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

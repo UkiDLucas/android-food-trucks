@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="hash_tags">#8e959b</color>
+    <color name="share_status_default">#F1F1F1</color>
+    <color name="share_status_twitter">#E22525</color>
+
+    <!-- twitter list item -->
+    <color name="tweet_text">#777879</color>
+    <color name="tweet_time">#696e73</color>
+
+    <!-- twitter feed -->
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#999</color>
+
+
+    <drawable name="transparent_gray_background_drawable">#80f2f2f2</drawable>
+    <drawable name="transparent_drawable">#00000000</drawable>
+
+    <color name="accent_color">#9C9C9C</color>
+    <!--<color name="white">#FFFFFF</color>-->
+    <color name="white_color_transparent">#80FFFFFF</color>
+    <color name="light_color">#f6f6f6</color>
+    <color name="banner_text_color">#4b4b4b</color>
+
+    <color name="dark_text_color">#616161</color>
+    <color name="medium_gray_color">#b8b8b8</color>
+    <color name="dark_orange_color">#f16726</color>
+    <color name="black">#FF000000</color>
+    <color name="platinum">#FFE5E5E5</color>
+    <color name="blue_dark">#ff0099cc</color>
+
+    <color name="branded_blue_light">#00AED1</color>
+    <color name="branded_blue_dark">#2980B0</color>
+    <color name="workout_timer_blue">#92c0d7</color>
+
+    <color name="gray_background_color">#f2f2f2</color>
+    <color name="gray_separator">#d7d7d7</color>
+    <color name="darker_gray_color">#dfdfdf</color>
+    <color name="riple_gray_color">#e5e5e5</color>
+    <color name="text_color">#9C9C9C</color>
+
+    <color name="text_color_ab">#9C9C9C</color>
+
+
+    <color name="tranparent_gray_background_color">#80efefef</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="instant_rewards_card_awarded">#dbe7e0</color>
+
+    <color name="text_color_ar">#9C9FA9</color>
+    <color name="new_light_grey_5">#88333333</color>
+    <color name="new_light_grey_4">#80333333</color>
+    <color name="new_light_grey_ar">#F6F9F8</color>
+    <color name="new_light_grey_3">#f2f2f2</color>
+    <color name="new_light_grey_2">#dededd</color>
+    <color name="new_light_grey_1">#c2c2c2</color>
+    <color name="new_dark_grey_1">#4e5255</color>
+    <color name="new_dark_grey_2">#808182</color>
+    <color name="new_dark_grey_3">#40000000</color>
+    <color name="new_blue_color">#00aed1</color>
+    <color name="new_bronze">#ce8e2a</color>
+    <color name="new_silver">#a3a7aa</color>
+    <color name="new_gold">#ffc214</color>
+    <color name="new_platinum">#c9c9c9</color>
+
+    <color name="fab_color">#1c8cba</color>
+    <color name="mini_fab_color">#02acd0</color>
+
+    <color name="transparent_white">#80ffffff</color>
+
+    <!-- goals and points colors-->
+    <color name="ripple_color">#77f16726</color>
+
+    <!--new background color-->
+    <color name="new_background_white">#F6F8F9</color>
+
+    <!--ripple animation colors-->
+    <color name="ripple_animation_normal">#bebebe</color>
+    <color name="ripple_animation_dark">#8e8e8e</color>
+    <color name="ar_in_progress">#2CD4D5</color>
+    <color name="ar_achieved">#2CCA6E</color>
+    <color name="ar_pending">#F7C72C</color>
+    <color name="ar_not_achieved">#E66D78</color>
+
+    <color name="ar_light_blue_new">#15d4d6</color>
+</resources>

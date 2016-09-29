@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Food Trucks</string>
+    <string name="title_tweet_detail">Tweet Detail</string>
+    <string name="app_string"></string>
+    <string name="error_no_internet_connection">Error! No connection to the Internet is currently available</string>
+    <string name="title_text">Click truck icon for more info</string>
+    <string name="fetching_map_details">Wait for the map information to load</string>
+    <string name="post_geo_tweets">Post your tweets with GEO-location on to appear on the map</string>
+
+    <string name="cache_folder">data/FoodTrucks</string>
+    <string name="quit_confirmation_msg">Are you sure you want to quit?</string>
+    <string name="about_us">About us</string>
+
+    <string name="no_geo_tweets_message">There are no food trucks with GPS enabled in their tweets at this moment.</string>
+    <string name="no_favorites_messsage">You did not select any favorites yet. Go back to a full list of trucks and click on the truck you like, then select a star.</string>
+
+</resources>

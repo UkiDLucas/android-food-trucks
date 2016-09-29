@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+            android:padding="8dp"
+            android:background="@drawable/action_bar_bkg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_text"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/tweets_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/list_divider"
+                android:dividerHeight="2dp"
+                android:drawSelectorOnTop="false"
+                android:fastScrollEnabled="true"/>
+
+        <TextView
+                android:id="@android:id/empty"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
