@@ -17,6 +17,9 @@ allprojects {
         jcenter()
         mavenCentral()
         // mavenRepo name:'maven-repo', url:'http://mvnrepository.com/artifact'
+        maven { url "https://mint.splunk.com/gradle/" }
+        maven { url "http://mvnrepository.com/artifact" }
+        maven { url "http://www.bugsense.com/maven/" }
     }
 }
 

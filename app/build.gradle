@@ -37,7 +37,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.android.maps/maps
     // compile group: 'com.google.android.maps', name: 'maps', version: '15_r2'
 
-
+    //compile "com.bugsense.trace:bugsense:3.5"
+    //compile 'com.bugsense.trace:bugsense:3.6'
     //compile 'com.bugsense.trace:bugsense:3.+'
 
     // https://mvnrepository.com/artifact/com.googlecode.android-query/android-query

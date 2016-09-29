@@ -24,7 +24,6 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockMapActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
-import com.bugsense.trace.BugSenseHandler;
 import com.cyberwalkabout.foodtrucks.adapter.StatusesAdapter;
 import com.cyberwalkabout.foodtrucks.cities.City;
 import com.cyberwalkabout.foodtrucks.data.FoodTruck;
